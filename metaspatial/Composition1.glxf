@@ -1,0 +1,1 @@
+{"assets":[{"uri":"Cube.gltf","name":"Cube"}],"nodes":[{"extras":{"meta_spatial":{"entity_id":"Cube","components":{"com.meta.spatial.toolkit.Hittable":{"hittable":{"keyString":"hittable","alias":"LineTest","type":"MeshCollision","value":1}}},"version":1}},"asset":0,"name":"Cube"}],"scenes":[{"nodes":[0]}],"scene":0,"asset":{"minVersion":"2.0","version":"2.0"}}
