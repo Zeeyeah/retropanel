@@ -25,8 +25,6 @@ import { NESSystem, NESComponent } from "./systems/nes/NESSystem.js";
 
 
 const assets: AssetManifest = {
-
-
   retropanel: {
     url: "/gltf/retropanel.glb",
     type: AssetType.GLTF,
@@ -67,15 +65,6 @@ World.create(document.getElementById("scene-container") as HTMLDivElement, {
   const { scene: retropanelScene } = AssetManager.getGLTF("retropanel")!;
 
   world.scene.add(retropanelScene);
-  
-  const sphereGeometry = new THREE.SphereGeometry(100, 32, 32);
-  const sphereMaterial = new THREE.MeshBasicMaterial({
-    color: 0x000000,
-    side: THREE.BackSide,
-  });
-  const blackSphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-  blackSphere.position.set(0, 0, 0);
-  world.scene.add(blackSphere);
   
   const findMeshByName = (object: THREE.Object3D, name: string): THREE.Mesh | null => {
     if (object instanceof THREE.Mesh && object.name === name) {
