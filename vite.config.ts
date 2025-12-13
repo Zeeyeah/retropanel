@@ -31,7 +31,6 @@ export default defineConfig({
   },
   esbuild: { target: "esnext" },
   optimizeDeps: {
-    exclude: ["@babylonjs/havok"],
     esbuildOptions: { target: "esnext" },
   },
   publicDir: "public",
