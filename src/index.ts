@@ -22,6 +22,7 @@ import { ButtonSystem, Button, HandPressable } from "./systems/button/ButtonSyst
 import { AnalogStickSystem, AnalogStick } from "./systems/analogStick/AnalogStickSystem.js";
 import { StickGrabSystem, StickGrab } from "./systems/analogStick/StickGrabSystem.js";
 import { NESSystem, NESComponent } from "./systems/nes/NESSystem.js";
+import { inject } from "@vercel/analytics"
 
 
 const assets: AssetManifest = {
@@ -31,6 +32,8 @@ const assets: AssetManifest = {
     priority: "critical",
   },
 };
+
+inject();
 
 World.create(document.getElementById("scene-container") as HTMLDivElement, {
   assets,
